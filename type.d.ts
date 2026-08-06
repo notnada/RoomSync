@@ -5,6 +5,7 @@ declare global {
         name: string;
         title: string;
         icon: ImageSourcePropType;
+        badgeCount?: number;
     }
 
     interface TabIconProps {
@@ -52,4 +53,4 @@ declare global {
     }
 }
 
-export {};
+export { };
