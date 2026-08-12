@@ -13,23 +13,43 @@ declare global {
         icon: ImageSourcePropType;
     }
 
-    interface Subscription {
+    interface Listing {
         id: string;
         icon: ImageSourcePropType;
+        title?: string;
+        image?: ImageSourcePropType;
+        location?: string;
+        beds?: number;
+        baths?: number;
+        sqft?: number;
+        tags?: string[];
+        verified?: boolean;
+        landlordName?: string;
+        landlordSub?: string;
         name: string;
         plan?: string;
         category?: string;
         paymentMethod?: string;
-        status?: string;
         startDate?: string;
         price: number;
-        currency?: string;
-        billing: string;
-        renewalDate?: string;
-        color?: string;
+        
     }
 
-    interface SubscriptionCardProps extends Omit<Subscription, "id"> {
+    interface Roommate {
+        id: string;
+        icon: ImageSourcePropType;
+        name: string;
+        age: number;
+        school: string;
+        location: string;
+        bio: string;
+        budget: string;
+        moveIn: string;
+        vibe: string;
+        tags: string[];
+    }
+
+    interface ListingCardProps extends Omit<Listing, "id"> {
         expanded: boolean;
         onPress: () => void;
         onCancelPress?: () => void;
@@ -54,3 +74,4 @@ declare global {
 }
 
 export { };
+

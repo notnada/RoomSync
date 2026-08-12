@@ -68,9 +68,11 @@
 
   /* Font Families */
   --font-sans: "PlusJakartaSans-Regular", system-ui, sans-serif;
-  --font-medium: "PlusJakartaSans-Medium", system-ui, sans-serif;
-  --font-bold: "PlusJakartaSans-Bold", system-ui, sans-serif;
-  --font-black: "PlusJakartaSans-ExtraBold", system-ui, sans-serif;
+  --font-sans-medium: "PlusJakartaSans-Medium", system-ui, sans-serif;
+  --font-sans-bold: "PlusJakartaSans-Bold", system-ui, sans-serif;
+  --font-sans-light: "PlusJakartaSans-Light", system-ui, sans-serif;
+  --font-sans-extrabold: "PlusJakartaSans-ExtraBold", system-ui, sans-serif;
+  --font-sans-semibold: "PlusJakartaSans-SemiBold", system-ui, sans-serif;
 
   /* Font Weights */
   --font-weight-normal: 400;
