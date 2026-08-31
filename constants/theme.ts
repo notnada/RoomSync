@@ -160,18 +160,16 @@ export const components = {
 
   tabBar: {
     // Outer container pinned to the bottom
-    bar: {
-      flexDirection:    "row"          as const,
-      alignItems:       "center"       as const,
-      justifyContent:   "space-around" as const,
-      paddingHorizontal: spacing[6],
-      paddingTop:        spacing[3],
-      paddingBottom:     spacing[7],   // extra clearance for home indicator
-      borderTopWidth:    1,
-      borderTopColor:    colors.border,
-      backgroundColor:   colors.overlayDark,
-    },
-
+   bar: {
+  flexDirection: "row" as const,
+  alignItems: "center" as const,
+  justifyContent: "space-around" as const,
+  paddingHorizontal: spacing[6],
+  paddingTop: spacing[3],
+  borderTopWidth: 1,
+  borderTopColor: colors.border,
+  backgroundColor: colors.overlayDark,
+},
     // Individual tab pressable
     item: {
       flex:           1,
@@ -181,13 +179,13 @@ export const components = {
     },
 
     // Icon wrapper — base (inactive)
-    iconBase: {
-      width:          spacing[10],
-      height:         spacing[10],
-      borderRadius:   radius["2xl"],
-      alignItems:     "center" as const,
-      justifyContent: "center" as const,
-    },
+   iconBase: {
+  width: 36,
+  height: 36,
+  borderRadius: radius["2xl"],
+  alignItems: "center" as const,
+  justifyContent: "center" as const,
+},
 
     // Icon wrapper — active state (spread after iconBase)
     iconActive: {
